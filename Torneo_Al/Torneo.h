@@ -6,7 +6,14 @@
 #ifndef TORNEO_H
 #define TORNEO_H
 
+#include <string>
+
 class Torneo {
+
+    std::string nombreTorneo="Torneo Estandar";
+    int numParticipantes;
+    int numFases;
+    
 public:
     Torneo();
     Torneo(const Torneo& orig);
