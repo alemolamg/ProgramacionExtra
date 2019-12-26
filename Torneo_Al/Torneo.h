@@ -13,12 +13,15 @@ class Torneo {
     std::string nombreTorneo="Torneo Estandar";
     int numParticipantes;
     int numFases;
+    int tamTorneoIni;
+    int tamTorneo; //creo que sobra
     
 public:
     Torneo();
     Torneo(const Torneo& orig);
     virtual ~Torneo();
 private:
+    void organizaFases(int num);
 
 };
 
