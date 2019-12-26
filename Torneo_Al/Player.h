@@ -6,14 +6,28 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
+#include <string>
+#include <iostream>
+
+
 class Player {
     std::string nombre="Vacio";
     
 public:
-    Player();
-    Player(const Player& orig);
+    Player(std::string nombrePlayer="Nadie"): nombre(nombrePlayer){};
+    Player(const Player& orig):nombre(orig.nombre){};
     virtual ~Player();
-private:
+    bool operator==(const Player& otro){
+        if(this!=&otro){
+            if (this->nombre==otro.nombre)
+                return true;
+            else
+                return false;
+        }else{
+            std::cout<<"Es el mismo Jugador";
+            return true;
+        }     
+    };
 
 };
 
