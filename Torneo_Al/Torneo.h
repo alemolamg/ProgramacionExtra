@@ -23,6 +23,7 @@ public:
     Torneo(int numPersonas=0,std::string nombre="Torneo Estandar");
     Torneo(const Torneo& orig);
     virtual ~Torneo();
+    
 private:
     void organizaFases();
     bool sorteo();
