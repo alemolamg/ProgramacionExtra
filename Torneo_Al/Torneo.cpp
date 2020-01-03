@@ -36,3 +36,8 @@ void Torneo::organizaFases() {
     
 }
 
+bool Torneo::sorteo() {
+    
+    
+    
+}
