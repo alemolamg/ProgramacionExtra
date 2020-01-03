@@ -25,6 +25,7 @@ public:
     virtual ~Torneo();
 private:
     void organizaFases();
+    bool sorteo();
 
 };
 
